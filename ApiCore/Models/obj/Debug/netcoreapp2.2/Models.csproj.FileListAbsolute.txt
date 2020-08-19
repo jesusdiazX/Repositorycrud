@@ -1,0 +1,9 @@
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\bin\Debug\netcoreapp2.2\Models.deps.json
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\bin\Debug\netcoreapp2.2\Models.dll
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\bin\Debug\netcoreapp2.2\Models.pdb
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\obj\Debug\netcoreapp2.2\Models.csprojAssemblyReference.cache
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\obj\Debug\netcoreapp2.2\Models.csproj.CoreCompileInputs.cache
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\obj\Debug\netcoreapp2.2\Models.AssemblyInfoInputs.cache
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\obj\Debug\netcoreapp2.2\Models.AssemblyInfo.cs
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\obj\Debug\netcoreapp2.2\Models.dll
+C:\Users\Jesus.Diaz\source\repos\ApiCore\Models\obj\Debug\netcoreapp2.2\Models.pdb

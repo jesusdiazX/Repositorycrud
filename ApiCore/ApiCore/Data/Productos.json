@@ -1,0 +1,33 @@
+{
+  "id": 234,
+  "name": "Mukesh Kumar",
+  "data": [
+    {
+      "Id": 11,
+      "Model": "Focus",
+      "Brand": "Ford",
+      "Descripcion": "",
+      "Kilometers": 100000,
+      "Price": 200000.0,
+      "Year": 2015
+    },
+    {
+      "Id": 12,
+      "Model": "Fiesta",
+      "Brand": "Ford",
+      "Descripcion": "--",
+      "Kilometers": "120000",
+      "Price": "350000",
+      "Year": "2020"
+    },
+    {
+      "Id": 13,
+      "Model": "V4",
+      "Brand": "Nissan",
+      "Descripcion": "--",
+      "Kilometers": "302032",
+      "Price": "202210",
+      "Year": "2011"
+    }
+  ]
+}

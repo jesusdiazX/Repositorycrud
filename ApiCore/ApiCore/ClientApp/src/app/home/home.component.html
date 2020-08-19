@@ -1,0 +1,119 @@
+
+
+
+<button (click)="NewProduct()" syle="margin:10px;" class="btn btn-success" style="margin:10px"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+
+<table class='table table-striped' *ngIf="prooductos">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Year</th>
+      <th>kilometers</th>
+      <th>Price</th>
+      <th> </th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let prod of prooductos | paginate: { itemsPerPage: 10, currentPage: 1 }">
+      <td>{{ prod.id  }}</td>
+      <td>{{ prod.brand }}</td>
+      <td>{{prod.model }}</td>
+      <td>{{ prod.year}}</td>
+      <td>{{ prod.kilometers| number}}</td>
+      <td>{{ prod.price |currency}}</td>
+      <td><button class="btn btn-primary" style="margin-left:8px;" (click)="update(prod)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button> <button style="margin-right:8px;" (click)="Delete(prod.id)" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button></td>
+    </tr>
+  </tbody>
+</table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+    `
+
+<ngx-spinner bdColor="rgba(51,51,51,0.8)"
+             size="medium"
+             color="#fff"
+             type="ball-scale-multiple">
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{Title}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="card">
+          <div class="card-body">
+
+            <form [formGroup]="formProduct" (ngSubmit)="onSubmit(formProduct.value)">
+              <input type="hidden" formControlName="id">
+              <div class="form-group">
+                <label>Brand *</label>
+
+                <select id="brand" name="brand" formControlName="brand"
+                        class="form-control"
+                        style="background: #f7f7f7;border: none;color: #000;"
+                        required>
+                  <option *ngFor="let Brands of Brands" value="{{Brands.id}}">{{Brands.descripcion}}</option>
+
+                </select>
+
+                <!--<input type="text" formControlName="brand" required class="form-control " maxlength="50" placeholder="Brand..">-->
+
+              </div>
+
+              <div class="form-group">
+                <label>Model *</label>
+                <input formControlName="model"  style="background: #f7f7f7;border: none;color: #000;" required type="text" class="form-control " maxlength="50" placeholder="Model..">
+              </div>
+              <div class="form-group">
+                <label>Year *</label>
+                <!--<input formControlName="year" id="yearid" (keypress)="valida($event)" maxlength="4" required type="text" class="form-control " placeholder="Year..">-->
+
+                <select id="yearid" name="year" formControlName="year"
+                        class="form-control"
+                        style="background: #f7f7f7;border: none;color: #000;"
+                        required>
+                  <option *ngFor="let Year of Year" value="{{Year.id}}">{{Year.descripcion}}</option>
+
+                </select>
+
+
+              </div>
+              <div class="form-group">
+                <label>Kilometer *</label>
+                <input  style="background: #f7f7f7;border: none;color: #000;" formControlName="kilometers" (keypress)="valida($event)" required type="text" class="form-control " maxlength="6" placeholder="Kilometers">
+
+              </div>
+              <div class="form-group">
+                <label>Price *</label>
+                <input formControlName="price"  style="background: #f7f7f7;border: none;color: #000;"
+                       currencyMask 
+                       value="formProduct.get('price').value|Currency"
+                       (keypress)="valida($event)" required type="text" class="form-control " maxlength="8" placeholder="Price..">
+              </div>
+
+              <button type="submit" [disabled]="formProduct.invalid" style="width: 100%;" class="btn btn-success">ADD</button>
+            </form>
+
+
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

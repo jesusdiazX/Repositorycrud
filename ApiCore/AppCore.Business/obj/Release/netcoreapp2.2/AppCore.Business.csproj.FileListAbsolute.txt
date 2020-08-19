@@ -1,0 +1,12 @@
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\obj\Release\netcoreapp2.2\AppCore.Business.csprojAssemblyReference.cache
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\obj\Release\netcoreapp2.2\AppCore.Business.csproj.CoreCompileInputs.cache
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\obj\Release\netcoreapp2.2\AppCore.Business.AssemblyInfoInputs.cache
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\obj\Release\netcoreapp2.2\AppCore.Business.AssemblyInfo.cs
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\bin\Release\netcoreapp2.2\AppCore.Business.deps.json
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\bin\Release\netcoreapp2.2\AppCore.Business.dll
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\bin\Release\netcoreapp2.2\AppCore.Business.pdb
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\bin\Release\netcoreapp2.2\Models.dll
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\bin\Release\netcoreapp2.2\Models.pdb
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\obj\Release\netcoreapp2.2\AppCore.Business.csproj.CopyComplete
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\obj\Release\netcoreapp2.2\AppCore.Business.dll
+C:\Users\Jesus.Diaz\source\repos\ApiCore\AppCore.Business\obj\Release\netcoreapp2.2\AppCore.Business.pdb
